@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ตรวจพิสูจน์อักษร TFAC Newsletter 120</title>
+<meta name="description" content="รายงานผลตรวจพิสูจน์อักษร TFAC Newsletter ฉบับที่ 120 (ต.ค.–ธ.ค. 2569) พร้อมตำแหน่งจุดที่ต้องแก้ในแต่ละหน้า">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f6fa; --surface:#ffffff; --surface-2:#eef2f8; --text:#1b2433; --muted:#5b6678; --line:#dde3ec;
+  --brand:#1f3a68; --brand-2:#2f6fd0;
+  --A:#c62828; --B:#d35400; --C:#1565c0; --D:#7b2fa0;
+  --A-bg:#fdecec; --B-bg:#fff1e5; --C-bg:#e8f0fc; --D-bg:#f4eafa;
+  --shadow:0 1px 2px rgba(16,24,40,.06),0 4px 16px rgba(16,24,40,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f141c; --surface:#171e29; --surface-2:#1e2735; --text:#e6ebf3; --muted:#9aa6b8; --line:#2a3445;
+    --brand:#9dbbf0; --brand-2:#6ea3ff;
+    --A:#ff6b6b; --B:#ff9f43; --C:#5aa2ff; --D:#c58af0;
+    --A-bg:#3a1c1f; --B-bg:#3a2816; --C-bg:#16263d; --D-bg:#2c1d38;
+    --shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f141c; --surface:#171e29; --surface-2:#1e2735; --text:#e6ebf3; --muted:#9aa6b8; --line:#2a3445;
+  --brand:#9dbbf0; --brand-2:#6ea3ff;
+  --A:#ff6b6b; --B:#ff9f43; --C:#5aa2ff; --D:#c58af0;
+  --A-bg:#3a1c1f; --B-bg:#3a2816; --C-bg:#16263d; --D-bg:#2c1d38;
+  --shadow:0 1px 2px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 "IBM Plex Sans Thai",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-2)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+header.hero{background:linear-gradient(135deg,#1f3a68,#2f6fd0);color:#fff;padding:36px 0 28px}
+.hero .eyebrow{opacity:.85;font-size:14px;letter-spacing:.02em}
+.hero h1{margin:4px 0 6px;font-size:clamp(24px,4vw,34px);line-height:1.3;font-weight:700}
+.hero p{margin:0;opacity:.9;max-width:760px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:14px;opacity:.9}
+.hero .dl{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.45);color:#fff;text-decoration:none;font-size:14px;background:rgba(255,255,255,.08)}
+.btn:hover{background:rgba(255,255,255,.18)}
+.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:-22px 0 18px;position:relative}
+.stat{background:var(--surface);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.stat .n{font-size:28px;font-weight:700;line-height:1.1}
+.stat .l{font-size:13px;color:var(--muted)}
+.stat.A .n{color:var(--A)} .stat.B .n{color:var(--B)} .stat.C .n{color:var(--C)} .stat.D .n{color:var(--D)}
+.stat .bar{height:4px;border-radius:4px;background:var(--surface-2);margin-top:8px;overflow:hidden}
+.stat .bar i{display:block;height:100%;background:var(--brand-2)}
+.toolbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px 0}
+.toolbar .wrap{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit;font-size:14px;cursor:pointer}
+.chip .dot{width:10px;height:10px;border-radius:50%}
+.chip[aria-pressed="false"]{opacity:.45}
+.chip .c{color:var(--muted);font-size:12px}
+.search{flex:1 1 200px;min-width:160px;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit;font-size:14px}
+.toggle{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--muted);cursor:pointer;user-select:none}
+.count{font-size:13px;color:var(--muted);margin-left:auto}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 6px}
+.jump a{font-size:13px;text-decoration:none;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:3px 9px;position:relative}
+.jump a.hasA{border-color:var(--A);color:var(--A);font-weight:600}
+.jump a.hidden{display:none}
+.priority{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--A);border-radius:14px;padding:16px 18px;margin:16px 0 8px;box-shadow:var(--shadow)}
+.priority h2{margin:0 0 8px;font-size:18px;color:var(--A)}
+.priority ol{margin:0;padding-left:22px}
+.priority li{margin:4px 0}
+.priority li a{color:inherit;text-decoration:none;border-bottom:1px dashed var(--muted)}
+section.page{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:20px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;margin:18px 0;box-shadow:var(--shadow);scroll-margin-top:70px}
+section.page.hidden{display:none}
+.page h2{grid-column:1/-1;margin:0;font-size:18px;display:flex;align-items:center;gap:10px}
+.page h2 .pg{background:var(--brand);color:var(--surface);border-radius:8px;padding:1px 10px;font-size:15px}
+.page h2 .sub{font-size:13px;color:var(--muted);font-weight:400}
+.sheet{position:relative;align-self:start;border-radius:8px;overflow:hidden;border:1px solid var(--line);cursor:zoom-in;background:#fff}
+.sheet img{display:block;width:100%;height:auto}
+.box{position:absolute;border:2px solid var(--c);border-radius:3px;background:color-mix(in srgb,var(--c) 10%,transparent);transition:box-shadow .2s,background .2s}
+.box b{position:absolute;top:-1px;left:-1px;transform:translateY(-100%);background:var(--c);color:#fff;font:600 10px/1.4 "IBM Plex Sans Thai",sans-serif;padding:0 4px;border-radius:3px 3px 0 0}
+.box.on{box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 45%,transparent);background:color-mix(in srgb,var(--c) 25%,transparent);z-index:3}
+.box.hidden{display:none}
+ul.items{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.item{border:1px solid var(--line);border-left:4px solid var(--c);border-radius:10px;padding:10px 12px 10px 14px;background:var(--surface);transition:background .2s,box-shadow .2s;cursor:pointer}
+.item.on{background:var(--cbg);box-shadow:0 0 0 2px var(--c) inset}
+.item.hidden{display:none}
+.item.done{opacity:.55}
+.item.done .found{text-decoration:line-through}
+.item .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px}
+.num{font-weight:700;color:var(--c);font-size:14px}
+.tag{font-size:12px;padding:1px 8px;border-radius:999px;background:var(--cbg);color:var(--c);font-weight:600}
+.item label{margin-left:auto;font-size:13px;color:var(--muted);display:inline-flex;gap:5px;align-items:center;cursor:pointer}
+.found{margin:0}
+.fix{margin:6px 0 0;font-size:14.5px;color:var(--muted)}
+.fix strong{color:var(--text);font-weight:600}
+.A{--c:var(--A);--cbg:var(--A-bg)} .B{--c:var(--B);--cbg:var(--B-bg)} .C{--c:var(--C);--cbg:var(--C-bg)} .D{--c:var(--D);--cbg:var(--D-bg)}
+.empty{display:none;text-align:center;color:var(--muted);padding:40px 0}
+footer{color:var(--muted);font-size:13px;padding:24px 0 40px;text-align:center}
+.lb{position:fixed;inset:0;background:rgba(8,12,20,.86);z-index:50;display:none;overflow:auto;padding:24px 16px}
+.lb.open{display:block}
+.lb .inner{position:relative;max-width:900px;margin:0 auto}
+.lb .sheet{cursor:default}
+.lb .close{position:fixed;top:12px;right:16px;font:inherit;font-size:15px;border:0;border-radius:999px;padding:6px 14px;background:#fff;color:#111;cursor:pointer;z-index:51}
+.themebtn{position:absolute;top:14px;right:16px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:999px;padding:4px 12px;font:inherit;font-size:13px;cursor:pointer}
+header.hero{position:relative}
+@media (max-width:860px){
+  section.page{grid-template-columns:1fr}
+  .sheet{max-width:460px;width:100%;justify-self:center}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat.total{grid-column:1/-1}
+  .count{margin-left:0;width:100%}
+  .toolbar{position:static}
+  #chips{display:flex;gap:6px;overflow-x:auto;width:100%;padding-bottom:2px;scrollbar-width:none}
+  #chips .chip{flex:0 0 auto}
+  .search{flex:1 1 100%}
+}
+@media print{
+  .toolbar,.themebtn,.lb,.hero .dl{display:none!important}
+  section.page{break-inside:avoid;box-shadow:none}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <button class="themebtn" id="themeBtn" type="button" aria-label="สลับธีม">โหมดสี</button>
+  <div class="wrap">
+    <div class="eyebrow">ส่วนงานสื่อสารองค์กร · สภาวิชาชีพบัญชี ในพระบรมราชูปถัมภ์</div>
+    <h1>ผลตรวจพิสูจน์อักษร TFAC Newsletter ฉบับที่ 120</h1>
+    <p>ฉบับประจำ ต.ค.–ธ.ค. 2569 (58 หน้า) ตรวจคำสะกด การเว้นวรรค การตัดคำ การจัดหน้า และความถูกต้องของข้อมูล กรอบสีบนภาพแต่ละหน้าคือตำแหน่งจุดที่ต้องแก้ คลิกรายการเพื่อดูตำแหน่ง หรือคลิกภาพเพื่อขยาย</p>
+    <div class="meta"><span>ตรวจเมื่อ 9 ต.ค. 2569</span><span>ไฟล์: รวมเล่ม TFAC Newsletter 120.pdf</span><span>สถานะ "แก้แล้ว" จะจำไว้ในเบราว์เซอร์ของผู้ดูแต่ละคน</span></div>
+    <div class="dl">
+      <a class="btn" href="files/TFAC-Newsletter-120-proofread.xlsx" download>ดาวน์โหลดรายการตรวจแก้ (Excel)</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="stats" id="stats"></div>
+</main>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span id="chips"></span>
+    <input class="search" id="q" type="search" placeholder="ค้นหาคำ เช่น บัญช๊, เว้นวรรค, หน้า 10">
+    <label class="toggle"><input type="checkbox" id="hideDone"> ซ่อนที่แก้แล้ว</label>
+    <span class="count" id="count"></span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="priority" id="priority"></div>
+  <nav class="jump" id="jump" aria-label="ไปที่หน้า"></nav>
+  <div id="pages"></div>
+  <div class="empty" id="empty">ไม่พบรายการที่ตรงกับตัวกรอง</div>
+</main>
+
+<footer class="wrap">จัดทำเพื่อใช้ภายในทีมสื่อสารองค์กร TFAC · ภาพหน้าเป็นฉบับร่างก่อนเผยแพร่</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true"><button class="close" id="lbClose" type="button">ปิด ✕</button><div class="inner" id="lbInner"></div></div>
+
+<script>
+const DATA = [{"id": 1, "page": 2, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "หน้าถวายอาลัยระบุ \"๑๓ ตุลาคม ๒๕๖๘\" แต่ฉบับนี้คือ ต.ค.–ธ.ค. 2569", "fix": "ตรวจสอบปี: น่าจะต้องเป็น \"๑๓ ตุลาคม ๒๕๖๙\" (ไฟล์ปีก่อนติดมา?)", "box": [32.34, 67.39, 21.17, 6.5]}, {"id": 2, "page": 3, "cat": "B", "catName": "คำผิด/ข้อความผิด", "found": "สารบัญใน Editor's Talk สะกด \"วิชาชีพบัญช๊\" (ใช้ไม้ตรี ๊ แทนสระ ี)", "fix": "แก้เป็น \"วิชาชีพบัญชี\"", "box": [59.06, 50.6, 4.02, 2.73]}, {"id": 3, "page": 3, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"ภัทรลดา  สง่าแสง\" เว้นวรรคระหว่างชื่อ-นามสกุล 2 ช่อง (คนอื่นในรายชื่อเว้น 1 ช่อง)", "fix": "เหลือเว้นวรรค 1 ช่อง", "box": [68.86, 18.89, 5.5, 2.48]}, {"id": 4, "page": 3, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "ที่ปรึกษา: ภัทรลดา สง่าแสง ระบุตำแหน่ง \"กรรมการสภาวิชาชีพบัญชีและประชาสัมพันธ์\" แต่หน้า 10 ของฉบับนี้ระบุว่ากรรมการและประชาสัมพันธ์วาระ 2569–2572 คือ นายกฤษ เกตุศร", "fix": "ตรวจสอบรายชื่อ/ตำแหน่งที่ปรึกษาให้เป็นชุดปัจจุบันหลังเลือกตั้ง", "box": [68.85, 21.93, 9.83, 2.41]}, {"id": 5, "page": 3, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "กล่องวัตถุประสงค์: บางบรรทัดถูกยืดตัวอักษรห่างผิดปกติ (justify) เช่น \"หรือความคิดเห็นด้านกฎหมาย ทั้งนี้\", \"โดยทางตรงหรือทางอ้อม...\"", "fix": "ปรับ justification/letter-spacing หรือจัดคำใหม่ให้ระยะเท่ากัน", "box": [67.38, 55.25, 21.01, 2.41]}, {"id": 6, "page": 3, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "ลำดับบทความใน Editor's Talk ไม่ตรงกับสารบัญ (สารบัญ: สอบบัญชี หน้า 23 มาก่อน มหาวิทยาลัย หน้า 26) และไม่ได้กล่าวถึงบทความหน้า 38 (TFRS ฉบับปรับปรุง) และหน้า 40 (Solar Rooftop)", "fix": "เรียงลำดับให้ตรงสารบัญ และเพิ่ม 2 บทความที่ขาด", "box": [13.64, 64.54, 16.27, 2.73]}, {"id": 7, "page": 3, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "เบอร์ติดต่อใช้รูปแบบ \"02 685 2514\" ขณะที่ปกหลังใช้ \"0 2685 2500\"", "fix": "เลือกใช้รูปแบบเดียวกันทั้งเล่ม", "box": [67.38, 74.59, 2.93, 2.48]}, {"id": 8, "page": 5, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "หน้าประกาศผลใช้คำนำหน้า นาย/นาง ทุกคน แต่หน้า 9–10 ใช้ ดร./รศ. ดร. (เช่น นายศุภมิตร vs ดร.ศุภมิตร, นางศศิวิมล vs รศ. ดร.ศศิวิมล)", "fix": "ยืนยันคำนำหน้าที่ถูกต้องและใช้ให้สอดคล้องกัน (หรือระบุว่าหน้า 5 เป็นภาพประกาศทางการ)", "box": [5.55, 22.71, 6.49, 2.46]}, {"id": 9, "page": 6, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "บรรทัดแรกย่อหน้าตัวหนา \"ผมขอขอบคุณสมาชิกทุกท่านจากใจ สำหรับ\" ถูกยืดตัวอักษรห่างผิดปกติ", "fix": "ปรับ justification/ตัดคำใหม่", "box": [13.4, 49.87, 33.17, 2.53]}, {"id": 10, "page": 6, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ย่อหน้า \"ผมและคณะกรรมการตระหนักดีว่า...\" ทั้งย่อหน้ามีระยะตัวอักษรห่างกว่าย่อหน้าอื่น", "fix": "ปรับ letter-spacing ให้เท่ากับย่อหน้าอื่น", "box": [7.68, 64.9, 38.89, 11.74]}, {"id": 11, "page": 7, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"ระดับอาเซียนซึ่งประสบการณ์\" ขาดเว้นวรรคก่อน \"ซึ่ง\"", "fix": "เป็น \"ระดับอาเซียน ซึ่งประสบการณ์...\"", "box": [7.68, 14.14, 41.01, 2.53]}, {"id": 12, "page": 7, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "บรรทัด \"ในแต่ละช่วงเวลาที่สำคัญ ทำให้ผมเข้าใจอย่างลึกซึ้งถึง\" ตัวอักษรถูกยืดห่าง", "fix": "ปรับ justification", "box": [7.68, 18.18, 41.01, 2.53]}, {"id": 13, "page": 8, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "กล่องคำพูดของ ศ. ดร.สมฤกษ์ ฤกษ์ณามระ ว่างเปล่า ไม่มีข้อความ", "fix": "ใส่คำพูด หรือนำกล่องออก", "box": [8.99, 52.02, 58.99, 9.97]}, {"id": 14, "page": 8, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "กล่องคำพูดของ นายเจริญ ผู้สัมฤทธิ์เลิศ ว่างเปล่า ไม่มีข้อความ", "fix": "ใส่คำพูด หรือนำกล่องออก", "box": [33.5, 72.35, 58.82, 10.1]}, {"id": 15, "page": 8, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "กราฟิกมุมขวาล่างคล้ายโลโก้ Messenger และถูกตัดขอบ (มุมซ้ายบนก็มีวงกลมสีเขียวโผล่)", "fix": "ตรวจว่าตั้งใจใช้หรือเป็นกราฟิกค้าง", "box": [77.12, 86.87, 22.88, 13.13]}, {"id": 16, "page": 9, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "กล่องคำพูดของ นายโกมินทร์ ล้นปราชญา ว่างเปล่า", "fix": "ใส่คำพูด หรือนำกล่องออก", "box": [39.05, 6.94, 52.61, 8.46]}, {"id": 17, "page": 9, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"ดร. สุรเดช\" มีเว้นวรรคหลัง ดร. แต่ \"ดร.ศุภมิตร\" ไม่มี", "fix": "ใช้รูปแบบเดียวกันทั้งหน้า 9–10", "box": [9.8, 91.29, 13.56, 2.53]}, {"id": 18, "page": 9, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ขนาดตัวอักษรในกล่องคำพูดไม่เท่ากัน (นายสุกิจ และ รศ.ศรัณย์ เล็กกว่าคนอื่น)", "fix": "ปรับขนาดให้เท่ากันทุกกล่อง", "box": [11.76, 23.74, 50.0, 4.29]}, {"id": 19, "page": 10, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "คำพูดของ รศ. ดร.ธีรชัย อรุณเรืองศิริเลิศ ซ้ำกับคำพูดของ รศ. ดร.ศศิวิมล ด้านบนทุกคำ และใช้ \"ดิฉัน\" ทั้งที่ผู้พูดเป็นผู้ชาย", "fix": "ใส่คำพูดที่ถูกต้องของ รศ. ดร.ธีรชัย", "box": [7.35, 21.59, 54.41, 8.33]}, {"id": 20, "page": 10, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "คำพูดของ น.ส.สุภาณี ตัดคำ \"เข้ม/แข็ง\" ข้ามบรรทัด", "fix": "ขึ้นบรรทัดใหม่ทั้งคำ \"เข้มแข็ง\"", "box": [12.09, 86.74, 45.92, 2.65]}, {"id": 21, "page": 10, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "สติกเกอร์อีโมจิทับข้อความ footer \"Issue 120\"", "fix": "ขยับอีโมจิ", "box": [37.25, 89.52, 19.12, 10.48]}, {"id": 22, "page": 11, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "การอ้างอิงในบทความเริ่มที่ [7] แล้วตามด้วย [3], [5], [2], [1], [6], [4] ไม่เรียงตามลำดับที่ปรากฏ และไม่พบรายการเอกสารอ้างอิงท้ายบทความ (อาจอยู่ในหน้าที่หายไป ดูหน้า 15–18)", "fix": "เรียงเลขอ้างอิงใหม่ และใส่รายการอ้างอิง", "box": [7.68, 72.73, 22.22, 2.53]}, {"id": 23, "page": 12, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "ลำดับการอ่านสับสน: เนื้อหาหัวข้อ \"ช่วยกัน: สร้างความร่วมมือในการร่วมสร้างสรรค์\" (ซ้ายล่าง) ควรมาก่อนย่อหน้า \"ดังนั้นการปฏิรูปธุรกิจจึงต้องเป็นการร่วมสร้างสรรค์\" (ขวาบน)", "fix": "ตรวจลำดับคอลัมน์/ย้ายย่อหน้าให้อ่านต่อเนื่อง", "box": [7.68, 48.48, 33.01, 6.06]}, {"id": 24, "page": 14, "cat": "B", "catName": "คำผิด/ข้อความผิด", "found": "\"ระบุแนวโน้มสำคัญกว่าบทบาทแบบดั้งเดิม...\" อ่านแล้วความหมายผิด", "fix": "แก้เป็น \"ระบุแนวโน้มสำคัญว่า บทบาทแบบดั้งเดิม...\"", "box": [48.86, 54.79, 7.18, 2.73]}, {"id": 25, "page": 14, "cat": "B", "catName": "คำผิด/ข้อความผิด", "found": "หัวข้อ \"2. ผู้ดูแลข้อมูล (Data Steward) AI\" มีคำว่า \"AI\" เกินมา", "fix": "ลบ \"AI\" ท้ายหัวข้อ", "box": [42.29, 78.64, 9.28, 2.8]}, {"id": 26, "page": 14, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "ระบุว่าบทบาทใหม่ \"อย่างน้อย 5 ด้าน\" แต่แสดงแค่ข้อ 1–2 แล้วบทความจบ (หน้า 15–18 กลายเป็นหน้า 11 ซ้ำ)", "fix": "ใส่เนื้อหาข้อ 3–5 และส่วนที่เหลือของบทความ", "box": [81.72, 58.83, 7.83, 2.73]}, {"id": 27, "page": 14, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "ภาพแผนภาพรูปที่ 1 ความละเอียดต่ำ ตัวอักษรไทยเล็ก ๆ ในวงกลมเบลอ อ่านยาก", "fix": "ใช้ไฟล์ภาพความละเอียดสูง/วาดใหม่เป็นเวกเตอร์", "box": [8.82, 8.46, 39.22, 35.23]}, {"id": 28, "page": 15, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "หน้า 15 เป็นหน้าซ้ำของหน้า 11 ทั้งหน้า (เนื้อหาเหมือนกันทุกบรรทัด)", "fix": "ใส่เนื้อหาหน้าที่ถูกต้องของบทความ", "box": [7.68, 4.8, 84.64, 6.82]}, {"id": 29, "page": 16, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "หน้า 16 เป็นหน้าซ้ำของหน้า 11 ทั้งหน้า", "fix": "ใส่เนื้อหาหน้าที่ถูกต้อง", "box": [7.68, 4.8, 84.64, 6.82]}, {"id": 30, "page": 17, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "หน้า 17 เป็นหน้าซ้ำของหน้า 11 ทั้งหน้า", "fix": "ใส่เนื้อหาหน้าที่ถูกต้อง", "box": [7.68, 4.8, 84.64, 6.82]}, {"id": 31, "page": 18, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "หน้า 18 เป็นหน้าซ้ำของหน้า 11 ทั้งหน้า", "fix": "ใส่เนื้อหาหน้าที่ถูกต้อง", "box": [7.68, 4.8, 84.64, 6.82]}, {"id": 32, "page": 19, "cat": "B", "catName": "คำผิด/ข้อความผิด", "found": "\"วารสารสภาวิชาชีบัญชี\" ตกตัว พ", "fix": "แก้เป็น \"วารสารสภาวิชาชีพบัญชี\" (และพิจารณาใช้ \"จดหมายข่าว\" ให้ตรงชื่อสิ่งพิมพ์)", "box": [56.54, 35.73, 34.31, 2.4]}, {"id": 33, "page": 19, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"(Artificial Intelligence : AI)\" มีเว้นวรรคก่อนโคลอน", "fix": "เป็น \"(Artificial Intelligence: AI)\"", "box": [9.8, 41.79, 13.56, 2.4]}, {"id": 34, "page": 19, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "รูปแบบชื่อผู้พูดไม่เหมือนกัน: \"นายบัญชี :\" (เว้นก่อนโคลอน) vs \"คุณชาริตา:\" (ไม่เว้น)", "fix": "ใช้รูปแบบเดียวกัน เช่น \"นายบัญชี:\"", "box": [26.8, 51.01, 10.13, 3.16]}, {"id": 35, "page": 19, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ย่อหน้าเปิดบทความ: ฟอนต์/ความหนาของบรรทัดแรกต่างจากบรรทัดถัดไป", "fix": "ใช้ฟอนต์และน้ำหนักเดียวกันทั้งย่อหน้า", "box": [15.69, 35.73, 34.48, 14.52]}, {"id": 36, "page": 21, "cat": "B", "catName": "คำผิด/ข้อความผิด", "found": "คำตอบเริ่มด้วย \"เชื่อมโยง”\" มีแต่เครื่องหมายปิดคำพูด ขาด “ เปิด", "fix": "เป็น \"“เชื่อมโยง” คือ...\"", "box": [15.85, 40.28, 7.52, 2.9]}, {"id": 37, "page": 21, "cat": "B", "catName": "คำผิด/ข้อความผิด", "found": "\"...แต่คือ “การใช้ข้อมูลที่เหมาะสมเพื่อช่วยให้องค์กรตัดสินใจได้\" ขาด ” ปิด", "fix": "เติม ” ปิดคำพูด", "box": [11.6, 88.13, 64.54, 2.9]}, {"id": 38, "page": 21, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "ไดอะแกรม Data → Information → Insight → Business Value → Decision → Intelligence ลำดับดูสลับ (Decision ควรมาก่อน Business Value?)", "fix": "ตรวจลำดับลูกศรกับผู้เขียน", "box": [15.03, 74.24, 62.25, 13.76]}, {"id": 39, "page": 22, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"3 คำสั้นๆ\" ไม่เว้นวรรคหน้าไม้ยมก (ที่อื่นในเล่มใช้ \"ต่าง ๆ\")", "fix": "เป็น \"3 คำสั้น ๆ\"", "box": [22.22, 44.07, 57.19, 2.53]}, {"id": 40, "page": 22, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ข้อความปิดท้าย/บางย่อหน้าใช้ฟอนต์ปนกันในย่อหน้าเดียว", "fix": "ตรวจ style ฟอนต์ให้ตรงกัน", "box": [41.01, 70.45, 47.71, 11.49]}, {"id": 41, "page": 23, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"TSA570 (GoingConcern)\" ตัวอักษรอัดจนช่องว่างหาย", "fix": "เป็น \"TSA 570 (Going Concern)\"", "box": [20.75, 78.79, 27.12, 2.78]}, {"id": 42, "page": 23, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ตัดคำ \"เหมาะ/สม\" ข้ามบรรทัด", "fix": "ให้ \"เหมาะสม\" อยู่บรรทัดเดียวกัน", "box": [76.31, 64.39, 14.05, 4.8]}, {"id": 43, "page": 23, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "บรรทัด \"ปัจจัยที่ส่งผลกระทบต่อคุณภาพงาน\" ตัวอักษรถูกยืดห่าง", "fix": "ปรับ justification", "box": [62.42, 76.64, 26.63, 2.65]}, {"id": 44, "page": 23, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "หัวข้อใช้ \"เชื่อมั่น :\" และ \"ช่วยกัน :\" (เว้นก่อนโคลอน) แต่หน้า 24 ใช้ \"เชื่อมโยง:\"", "fix": "ใช้รูปแบบเดียวกันทั้ง 3 หัวข้อ", "box": [20.75, 56.31, 58.5, 3.79]}, {"id": 45, "page": 24, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"ผู้สอบบัญชี  เช่น\" เว้นวรรค 2 ช่อง", "fix": "เหลือ 1 ช่อง", "box": [12.25, 44.32, 35.95, 2.78]}, {"id": 46, "page": 24, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ข้อความในกล่อง (TSA for LCE/NPAE และ Community) ตัวอักษรยืดห่างผิดปกติ", "fix": "ปรับ letter-spacing", "box": [21.57, 29.92, 27.12, 6.82]}, {"id": 47, "page": 25, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"Digital Audit Hub  ตลอดจน\" เว้นวรรค 2 ช่อง", "fix": "เหลือ 1 ช่อง", "box": [10.46, 28.54, 38.4, 2.65]}, {"id": 48, "page": 25, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "กล่องคำกล่าวปิดท้าย 2 บรรทัดแรกตัวอักษรยืดห่าง", "fix": "ปรับ letter-spacing", "box": [12.58, 61.99, 36.27, 5.68]}, {"id": 49, "page": 25, "cat": "B", "catName": "คำผิด/ข้อความผิด", "found": "ท้ายคำกล่าวมีเครื่องหมาย ” ที่เป็นตัวพิมพ์ ซ้ำกับเครื่องหมายคำพูดกราฟิกตัวใหญ่", "fix": "ลบอย่างใดอย่างหนึ่ง และตรวจว่ามี “ เปิดคู่กัน", "box": [12.42, 84.72, 14.22, 3.16]}, {"id": 50, "page": 26, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "บทสรุปผู้บริหาร: บรรทัดแรกฟอนต์ต่างจากบรรทัดถัดไป", "fix": "ใช้ฟอนต์เดียวกัน", "box": [41.01, 43.18, 51.96, 8.96]}, {"id": 51, "page": 26, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "ไอคอน \"แนวคิด TDABC\" ไม่มีชื่อเต็ม ขณะที่ไอคอนอื่นมีวงเล็บภาษาอังกฤษ", "fix": "เพิ่ม (Time-Driven Activity-Based Costing)", "box": [64.22, 75.13, 5.56, 4.17]}, {"id": 52, "page": 27, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"เห็นภาพสะท้อน ของแรงกดดัน\" มีเว้นวรรคเกิน และ \"ต่างๆ\" ไม่เว้นหน้า ๆ", "fix": "เป็น \"เห็นภาพสะท้อนของแรงกดดันในมิติต่าง ๆ\"", "box": [7.68, 48.11, 81.54, 2.78]}, {"id": 53, "page": 27, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "ตารางในบทความไม่มีชื่อ/เลขตาราง แต่หน้า 31 อ้างถึง \"ตารางที่ 4\"", "fix": "ใส่ชื่อตารางที่ 1–4 ให้ครบและเรียงลำดับ", "box": [10.13, 52.15, 80.23, 3.66]}, {"id": 54, "page": 28, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "ภาพที่ 1 สร้างจาก AI มีข้อความภาษาอังกฤษผิด/ไร้ความหมายจำนวนมาก เช่น \"ecoriing\", \"incranity\", \"renirvations\", \"anonim\", \"pronrams\", \"Modular modular\" และตัวเลข \"+330,000 THB\" ไม่ตรงกับเนื้อหา (+138,000/+290,000)", "fix": "ทำภาพใหม่ หรือแก้ข้อความ/ตัวเลขในภาพให้ถูกต้อง", "box": [10.95, 23.74, 77.78, 53.54]}, {"id": 55, "page": 29, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "ตารางที่ 2: หัวคอลัมน์ 2 และ 3 ซ้ำกัน \"ลักษณะและตัวผลักดันต้นทุน (Cost Drivers)\"", "fix": "คอลัมน์ 3 น่าจะเป็น \"แนวทางบริหาร/การจัดการ\"", "box": [24.02, 36.36, 41.83, 5.56]}, {"id": 56, "page": 29, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"เรียน(Batch Level)\" ไม่เว้นวรรคก่อนวงเล็บ", "fix": "เป็น \"เรียน (Batch Level)\"", "box": [9.97, 51.77, 8.66, 2.78]}, {"id": 57, "page": 29, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ข้อความในตาราง เช่น \"ประหยัดรายจ่ายหลีกเลี่ยงได้\", \"(Common Core) และทบทวน\" ตัวอักษรยืดห่างมาก", "fix": "ปรับ letter-spacing / ตัดคำ", "box": [46.73, 51.64, 42.97, 7.45]}, {"id": 58, "page": 30, "cat": "B", "catName": "คำผิด/ข้อความผิด", "found": "\"ค่าธรรมเนียมการศึกษาเรียนสุทธิ\" คำซ้อนเกิน", "fix": "เป็น \"ค่าธรรมเนียมการศึกษาสุทธิ\"", "box": [16.34, 29.55, 32.19, 2.78]}, {"id": 59, "page": 30, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "\"ขาดทุนทันที -152,000 บาทต่อปี\" ใช้คำว่าขาดทุนคู่กับเครื่องหมายลบ อ่านเหมือนลบซ้อน", "fix": "เป็น \"ขาดทุนทันที 152,000 บาทต่อปี\" หรือ \"(152,000)\"", "box": [7.68, 19.32, 41.01, 2.78]}, {"id": 60, "page": 31, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "\"แม้เงินเดือนอาจารย์ประจำ 1.2 ล้านบาท...\" แต่หน้า 30 ตัวเลข 1.2 ล้านบาท คือต้นทุนคงที่รวม (เงินเดือน+ค่าเสื่อม)", "fix": "ตรวจตัวเลข/ถ้อยคำให้ตรงกัน", "box": [13.56, 18.94, 79.41, 2.78]}, {"id": 61, "page": 31, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "อ้างถึง \"ตารางที่ 4\" แต่ตารางก่อนหน้าไม่มีเลขกำกับ; ตัวเลขในตารางขนาดฟอนต์ไม่เท่ากัน (300,000 ใหญ่กว่า 40,000)", "fix": "ใส่เลขตารางให้ครบ และจัดฟอนต์ตัวเลขให้เท่ากัน", "box": [7.68, 25.0, 13.4, 2.78]}, {"id": 62, "page": 31, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "กราฟภาพที่ 2: ป้ายตัวเลข -152,000 ทับแกน/เส้นกราฟ", "fix": "ขยับป้ายตัวเลข", "box": [10.95, 75.51, 38.56, 12.75]}, {"id": 63, "page": 33, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"ABM, TDABCและการวิเคราะห์\" ขาดเว้นวรรค", "fix": "เป็น \"ABM, TDABC และการวิเคราะห์\"", "box": [51.31, 71.21, 41.67, 2.65]}, {"id": 64, "page": 33, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ข้อความติดกันไม่เว้นวรรค เช่น \"การปลดบุคลากรแต่คือ\", \"รักษารายรับลดรายจ่าย\"", "fix": "เว้นวรรคระหว่างวลี", "box": [51.31, 75.25, 41.67, 4.67]}, {"id": 65, "page": 33, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"เพื่อจัดสรร ทรัพยากร\" มีเว้นวรรคเกิน", "fix": "เป็น \"จัดสรรทรัพยากร\"", "box": [51.31, 79.29, 41.67, 2.65]}, {"id": 66, "page": 34, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "URL ถูกตัดขึ้นบรรทัดใหม่ (…/profit-priorities-from-activity / -based-costing) อาจคลิก/พิมพ์ตามผิด", "fix": "ใช้ short link หรือจัดไม่ให้ตัดกลาง URL", "box": [7.68, 85.73, 41.5, 2.65]}, {"id": 67, "page": 35, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ในภาพหัวเรื่อง: \"นักบัญชี ควรใช้ AI หรือไม่\" มีเว้นวรรคเกินหลัง \"นักบัญชี\" (ข้อความอยู่ในภาพ ต้องแก้ที่ไฟล์ต้นฉบับ)", "fix": "เป็น \"นักบัญชีควรใช้ AI หรือไม่\"", "box": [34.64, 24.75, 23.37, 2.78]}, {"id": 68, "page": 35, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"ตามไปด้วยเพราะหาก\" ขาดเว้นวรรค", "fix": "เป็น \"ตามไปด้วย เพราะหาก...\"", "box": [10.78, 53.41, 49.51, 2.78]}, {"id": 69, "page": 37, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"มาตรการรักษา ความปลอดภัย\" มีเว้นวรรคเกิน", "fix": "เป็น \"มาตรการรักษาความปลอดภัย\"", "box": [10.46, 56.57, 78.92, 2.65]}, {"id": 70, "page": 37, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "อ้างอิง \"ACCA. (2026).The ethical...\" ขาดเว้นวรรคหลังวงเล็บปี (IESBA บรรทัดบนเว้นถูก)", "fix": "เป็น \"ACCA. (2026). The ethical...\"", "box": [7.68, 88.76, 25.49, 2.4]}, {"id": 71, "page": 38, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"TFRS1\" ไม่เว้นวรรค (กล่องอื่นใช้ \"TFRS 3\", \"TFRS 9\" ฯลฯ)", "fix": "เป็น \"TFRS 1\"", "box": [9.64, 53.79, 5.88, 3.16]}, {"id": 72, "page": 38, "cat": "B", "catName": "คำผิด/ข้อความผิด", "found": "กล่องที่ 3: \"สัญญาอ้างถึงระแสไฟฟ้า\" ตก ก", "fix": "แก้เป็น \"สัญญาอ้างอิงกระแสไฟฟ้า/สัญญาอ้างถึงกระแสไฟฟ้า\"", "box": [63.93, 83.77, 5.76, 2.73]}, {"id": 73, "page": 39, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"ต้นทุนการรวมธุรกิจซึ่งแนวทาง\" ขาดเว้นวรรค", "fix": "เป็น \"ต้นทุนการรวมธุรกิจ ซึ่งแนวทาง...\"", "box": [55.07, 56.82, 28.27, 2.65]}, {"id": 74, "page": 40, "cat": "A", "catName": "ต้องแก้ก่อนเผยแพร่", "found": "\"วันที่เผยแพร่ DD MMM YYYY\" เป็นข้อความ placeholder ยังไม่ได้ใส่วันที่จริง", "fix": "ใส่วันที่เผยแพร่จริง", "box": [7.68, 10.98, 16.34, 2.4]}, {"id": 75, "page": 40, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"การรายงานทางการเงินและมิได้\" (ตัวหนาติดตัวธรรมดา) ขาดเว้นวรรค", "fix": "ตรวจเว้นวรรคหลังข้อความตัวหนา", "box": [53.27, 70.58, 37.25, 2.9]}, {"id": 76, "page": 41, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "ผังใช้คำว่า \"ลูกค้า\" แต่เนื้อหาบทความใช้ \"ผู้ซื้อ/ผู้ซื้อไฟฟ้า\"", "fix": "ใช้คำเดียวกันทั้งบทความ", "box": [15.52, 65.91, 6.21, 3.03]}, {"id": 77, "page": 42, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ตัดคำ \"ในเวลาที่สม/เหตุสมผล\" ข้ามบรรทัด", "fix": "ให้ \"สมเหตุสมผล\" อยู่บรรทัดเดียวกัน", "box": [83.66, 33.21, 8.82, 2.53]}, {"id": 78, "page": 42, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"ที่ระบุให้ ผู้ซื้อไฟฟ้า\" มีเว้นวรรคเกิน", "fix": "เป็น \"ที่ระบุให้ผู้ซื้อไฟฟ้า\"", "box": [7.68, 56.69, 12.42, 2.53]}, {"id": 79, "page": 43, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"Bound volume 2026\" (v ตัวเล็ก) ไม่ตรงกับหน้า 38 \"Bound Volume 2026\"", "fix": "ใช้ \"Bound Volume\" ให้ตรงกัน", "box": [7.68, 8.08, 77.61, 2.65]}, {"id": 80, "page": 43, "cat": "B", "catName": "คำผิด/ข้อความผิด", "found": "\"ที่เกี่ยวข้องเกี่ยวกับวิธีการใช้...\" ซ้อนคำ", "fix": "เป็น \"ที่เกี่ยวกับวิธีการใช้...\"", "box": [53.43, 69.32, 33.82, 2.53]}, {"id": 81, "page": 50, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "เลขข้อใช้ \"(1.)\" \"(2.)\" \"(3.)\" (หน้า 50–51) แต่หน้า 47 ใช้ \"(1)\" \"(2)\"", "fix": "ใช้รูปแบบเดียวกัน เช่น (1) (2) (3)", "box": [18.3, 76.77, 5.07, 2.78]}, {"id": 82, "page": 50, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"81 ถึง 86  ดังนี้\" เว้นวรรค 2 ช่อง", "fix": "เหลือ 1 ช่อง", "box": [64.87, 70.58, 12.42, 2.53]}, {"id": 83, "page": 51, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ข้อความในกล่องไอคอน เช่น \"มูลค่าเริ่มแรกของหนี้สิน\", \"การบูรณะสถานที่ตั้งของ\" ตัวอักษรยืดห่าง", "fix": "ปรับ letter-spacing", "box": [10.13, 73.74, 19.93, 4.17]}, {"id": 84, "page": 52, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "ยกตัวอย่างอัตราอ้างอิง \"LIBOR\" ซึ่งเลิกใช้แล้วตั้งแต่ปี 2566", "fix": "พิจารณาใช้ตัวอย่างอื่น เช่น THOR/SOFR", "box": [42.32, 34.47, 6.37, 2.53]}, {"id": 85, "page": 53, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "หัวข้อ \"ตัวอย่างการบันทึกบัญชี\" ต่างจากหัวข้ออื่นที่ใช้ \"ตัวอย่างวิธีการบันทึกบัญชี\"", "fix": "ใช้ชื่อหัวข้อแบบเดียวกัน", "box": [11.44, 40.78, 39.05, 3.03]}, {"id": 86, "page": 54, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"Case Competition หรือ การแข่งขันกรณีศึกษา\" เว้นวรรคเกินหลัง \"หรือ\"; บรรทัดในย่อหน้านี้ยืดตัวอักษรไม่เท่ากัน", "fix": "ตัดเว้นวรรคเกิน / ปรับ justification", "box": [49.18, 70.71, 43.95, 3.16]}, {"id": 87, "page": 55, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "3 บรรทัดท้ายคอลัมน์ซ้าย (และการพร้อมช่วย... ช่วยให้ทุกคน...) ยื่นเลยขอบคอลัมน์ไปทางซ้าย", "fix": "จัดแนวให้ตรงขอบคอลัมน์", "box": [6.7, 79.04, 41.99, 5.81]}, {"id": 88, "page": 56, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "ใช้เครื่องหมายคำพูดตรง \"อัปสกิล\" \"ปลดล็อก\" ขณะที่ทั้งเล่มใช้ “ ” แบบโค้ง", "fix": "เปลี่ยนเป็น “ ”", "box": [12.58, 74.49, 7.52, 2.53]}, {"id": 89, "page": 56, "cat": "C", "catName": "เว้นวรรค/ตัดคำ/จัดหน้า", "found": "\"หากจะเรียกว่า\" ตัวอักษรถูกยืดห่างมาก (ข้างภาพ)", "fix": "ปรับ text wrap/justification", "box": [13.4, 72.35, 13.4, 2.78]}, {"id": 90, "page": 58, "cat": "D", "catName": "ข้อสังเกต/ควรตรวจสอบ", "found": "ปกหลังใช้เบอร์รูปแบบ \"0 2685 2500\" แต่หน้า 3 ใช้ \"02 685 2514\"", "fix": "ใช้รูปแบบเดียวกัน", "box": [24.51, 56.19, 51.14, 2.53]}];
+const CATS = {A:"ต้องแก้ก่อนเผยแพร่",B:"คำผิด/ข้อความผิด",C:"เว้นวรรค/ตัดคำ/จัดหน้า",D:"ข้อสังเกต/ควรตรวจสอบ"};
+const store = {
+  get(k,d){try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},
+  set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+};
+let done = new Set(store.get("tfac120-done",[]));
+const active = new Set(Object.keys(CATS));
+const esc = s => s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// theme
+const root=document.documentElement;
+const savedTheme=store.get("tfac120-theme",null); if(savedTheme) root.dataset.theme=savedTheme;
+document.getElementById("themeBtn").onclick=()=>{
+  const dark = root.dataset.theme ? root.dataset.theme==="dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark"; store.set("tfac120-theme",root.dataset.theme);
+};
+
+// stats
+const byCat = c => DATA.filter(d=>d.cat===c).length;
+document.getElementById("stats").innerHTML =
+  `<div class="stat total"><div class="n" id="totalN">${DATA.length}</div><div class="l">จุดที่พบทั้งหมด · <span id="doneN"></span></div><div class="bar"><i id="doneBar"></i></div></div>` +
+  Object.keys(CATS).map(c=>`<div class="stat ${c}"><div class="n">${byCat(c)}</div><div class="l">${CATS[c]}</div></div>`).join("");
+
+// chips
+document.getElementById("chips").innerHTML = Object.keys(CATS).map(c=>
+  `<button class="chip ${c}" data-cat="${c}" aria-pressed="true" type="button"><span class="dot" style="background:var(--c)"></span>${CATS[c]} <span class="c">${byCat(c)}</span></button>`).join(" ");
+document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{
+  const c=b.dataset.cat; if(active.has(c)){active.delete(c);b.setAttribute("aria-pressed","false")}else{active.add(c);b.setAttribute("aria-pressed","true")} apply();
+});
+
+// priority list
+const A = DATA.filter(d=>d.cat==="A");
+document.getElementById("priority").innerHTML = `<h2>ต้องแก้ก่อนเผยแพร่ (${A.length} จุด)</h2><ol>` +
+  A.map(d=>`<li><a href="#f${d.id}" data-go="${d.id}">หน้า ${d.page}</a> — ${esc(d.found)}</li>`).join("") + `</ol>`;
+
+// pages
+const pages=[...new Set(DATA.map(d=>d.page))].sort((a,b)=>a-b);
+const pad=n=>String(n).padStart(2,"0");
+function sheetHTML(p){
+  return `<img src="pages/p${pad(p)}.jpg" alt="หน้า ${p}" loading="lazy" width="1102" height="1426">` +
+    DATA.filter(d=>d.page===p).map(d=>`<div class="box ${d.cat}" data-id="${d.id}" style="left:${d.box[0]}%;top:${d.box[1]}%;width:${d.box[2]}%;height:${d.box[3]}%"><b>${d.id}</b></div>`).join("");
+}
+document.getElementById("pages").innerHTML = pages.map(p=>{
+  const its=DATA.filter(d=>d.page===p);
+  return `<section class="page" id="p${p}" data-page="${p}">
+    <h2><span class="pg">หน้า ${p}</span><span class="sub">${its.length} จุด</span></h2>
+    <div class="sheet" data-page="${p}">${sheetHTML(p)}</div>
+    <ul class="items">${its.map(d=>`<li class="item ${d.cat}" id="f${d.id}" data-id="${d.id}">
+      <div class="top"><span class="num">#${d.id}</span><span class="tag">${d.catName}</span>
+      <label onclick="event.stopPropagation()"><input type="checkbox" data-done="${d.id}"> แก้แล้ว</label></div>
+      <p class="found">${esc(d.found)}</p>
+      <p class="fix"><strong>แนะนำ:</strong> ${esc(d.fix)}</p></li>`).join("")}</ul>
+  </section>`;}).join("");
+document.getElementById("jump").innerHTML = pages.map(p=>`<a href="#p${p}" data-page="${p}" class="${DATA.some(d=>d.page===p&&d.cat==="A")?"hasA":""}">${p}</a>`).join("");
+
+// done checkboxes
+document.querySelectorAll("[data-done]").forEach(cb=>{
+  const id=+cb.dataset.done; cb.checked=done.has(id);
+  cb.onchange=()=>{cb.checked?done.add(id):done.delete(id); store.set("tfac120-done",[...done]); apply();};
+});
+document.getElementById("hideDone").onchange=apply;
+document.getElementById("q").oninput=apply;
+
+// highlight link
+function focusItem(id,scrollImg){
+  document.querySelectorAll(".box.on,.item.on").forEach(e=>e.classList.remove("on"));
+  const it=document.getElementById("f"+id); const bx=document.querySelector(`.page .box[data-id="${id}"]`);
+  if(it) it.classList.add("on"); if(bx) bx.classList.add("on");
+  return {it,bx};
+}
+document.querySelectorAll(".item").forEach(li=>li.onclick=()=>{
+  const {bx}=focusItem(+li.dataset.id);
+  if(bx && matchMedia("(max-width:860px)").matches) bx.scrollIntoView({behavior:"smooth",block:"center"});
+});
+document.querySelectorAll("[data-go]").forEach(a=>a.onclick=e=>{
+  e.preventDefault(); const id=+a.dataset.go;
+  const s=document.getElementById("f"+id).closest("section"); s.classList.remove("hidden");
+  s.scrollIntoView({behavior:"smooth",block:"start"}); focusItem(id);
+});
+
+// lightbox
+const lb=document.getElementById("lb"), lbInner=document.getElementById("lbInner");
+document.querySelectorAll(".page .sheet").forEach(sh=>sh.onclick=e=>{
+  const p=+sh.dataset.page; const box=e.target.closest(".box");
+  lbInner.innerHTML=`<div class="sheet">${sheetHTML(p)}</div>`;
+  lbInner.querySelectorAll(".box").forEach(b=>{ if(document.querySelector(`.page .box[data-id="${b.dataset.id}"]`).classList.contains("hidden")) b.classList.add("hidden"); });
+  lb.classList.add("open"); document.body.style.overflow="hidden";
+  if(box){ focusItem(+box.dataset.id); const b2=lbInner.querySelector(`.box[data-id="${box.dataset.id}"]`); b2.classList.add("on"); setTimeout(()=>b2.scrollIntoView({block:"center"}),30); }
+});
+const closeLb=()=>{lb.classList.remove("open");document.body.style.overflow="";};
+document.getElementById("lbClose").onclick=closeLb;
+lb.onclick=e=>{if(e.target===lb) closeLb();};
+addEventListener("keydown",e=>{if(e.key==="Escape") closeLb();});
+
+function apply(){
+  const q=document.getElementById("q").value.trim().toLowerCase();
+  const hide=document.getElementById("hideDone").checked;
+  let shown=0;
+  DATA.forEach(d=>{
+    const hay=(d.found+" "+d.fix+" "+d.catName+" หน้า "+d.page).toLowerCase();
+    const vis=active.has(d.cat) && (!q || hay.includes(q)) && !(hide && done.has(d.id));
+    document.getElementById("f"+d.id).classList.toggle("hidden",!vis);
+    document.getElementById("f"+d.id).classList.toggle("done",done.has(d.id));
+    document.querySelector(`.page .box[data-id="${d.id}"]`).classList.toggle("hidden",!vis);
+    if(vis) shown++;
+  });
+  pages.forEach(p=>{
+    const any=DATA.some(d=>d.page===p && !document.getElementById("f"+d.id).classList.contains("hidden"));
+    document.getElementById("p"+p).classList.toggle("hidden",!any);
+    document.querySelector(`.jump a[data-page="${p}"]`).classList.toggle("hidden",!any);
+  });
+  document.getElementById("count").textContent=`แสดง ${shown} จาก ${DATA.length} จุด`;
+  document.getElementById("empty").style.display=shown?"none":"block";
+  document.getElementById("doneN").textContent=`แก้แล้ว ${done.size}`;
+  document.getElementById("doneBar").style.width=(done.size/DATA.length*100)+"%";
+}
+apply();
+</script>
+</body>
+</html>
